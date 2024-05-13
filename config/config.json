@@ -1,0 +1,10 @@
+{
+    "urls": {
+        "base_url": "https://www.example.com",
+        "login_url": "https://the-internet.herokuapp.com/login"
+    },
+    "credentials": {
+        "username": "testuser",
+        "password": "testpass"
+    }
+}

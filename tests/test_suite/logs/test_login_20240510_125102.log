@@ -1,0 +1,5 @@
+2024-05-10 12:51:02,035 - INFO - Initialized LoginPage
+2024-05-10 12:51:05,218 - INFO - Navigated to URL: https://the-internet.herokuapp.com/login
+2024-05-10 12:51:05,279 - INFO - Entered username: testuser
+2024-05-10 12:51:05,337 - INFO - Entered password: testpass
+2024-05-10 12:51:05,893 - INFO - Clicked login button
