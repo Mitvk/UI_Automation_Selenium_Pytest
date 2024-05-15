@@ -1,10 +1,13 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
+
+from tests.pages.base import base
 from utilities.utility import read_config, setup_logger
 
 
-class LoginPage:
+class LoginPage(base):
     def __init__(self, driver: WebDriver, test_name):
+        super().__init__(driver, test_name)
         self.driver = driver
 
         # Set up logger for the page
@@ -27,17 +30,17 @@ class LoginPage:
 
     def open_login_page(self):
         # Open the login page URL
-        self.driver.get(self.login_url)
+        self.go_to_url(self.login_url)
         self.logger.info(f"Navigated to URL: {self.login_url}")
 
     def enter_username(self):
-        self.driver.find_element(*self.username_locator).send_keys(self.username)
+        self.enter_text(element_locator=self.username_locator, text=self.username)
         self.logger.info(f"Entered username: {self.username}")
 
     def enter_password(self):
-        self.driver.find_element(*self.password_locator).send_keys(self.password)
+        self.enter_text(element_locator=self.password_locator, text=self.password)
         self.logger.info(f"Entered password: {self.password}")
 
     def click_login_button(self):
-        self.driver.find_element(*self.login_button_locator).click()
+        self.click_element(element_locator=self.login_button_locator)
         self.logger.info("Clicked login button")

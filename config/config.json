@@ -4,7 +4,7 @@
         "login_url": "https://the-internet.herokuapp.com/login"
     },
     "credentials": {
-        "username": "testuser",
-        "password": "testpass"
+        "username": "tomsmith",
+        "password": "SuperSecretPassword!"
     }
 }

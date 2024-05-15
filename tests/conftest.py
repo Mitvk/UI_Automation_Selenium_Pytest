@@ -71,22 +71,3 @@ try:
     import pytest_html
 except ImportError:
     pytest_html = None
-
-
-
-# def setup_logger():
-#     # Create a logger
-#     logger = logging.getLogger('selenium_logger')
-#
-#     # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
-#     logger.setLevel(logging.INFO)
-#
-#     # Create a console handler and set its format
-#     console_handler = logging.StreamHandler()
-#     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-#     console_handler.setFormatter(formatter)
-#
-#     # Add the console handler to the logger
-#     logger.addHandler(console_handler)
-#
-#     return logger
